@@ -1,0 +1,91 @@
+:root {
+    /* Primary Color in HSL */
+    --primary-hue: 273;
+    --primary-saturation: 45%;
+    --primary-light: 55%;
+
+    --color-primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-light));
+    --color-primary-light: hsl(
+        var(--primary-hue),
+        var(--primary-saturation),
+        calc(var(--primary-light) + 10%)
+    );
+    --color-primary-dark: hsl(
+        var(--primary-hue),
+        var(--primary-saturation),
+        calc(var(--primary-light) - 10%)
+    );
+
+    /* Secondary Color in HSL */
+    --secondary-hue: 265;
+    --secondary-saturation: 39%;
+    --secondary-light: 37%;
+
+    --color-secondary: hsl(
+        var(--secondary-hue),
+        var(--secondary-saturation),
+        var(--secondary-light)
+    );
+    --color-secondary-light: hsl(
+        var(--secondary-hue),
+        var(--secondary-saturation),
+        calc(var(--secondary-light) + 10%)
+    );
+    --color-secondary-dark: hsl(
+        var(--secondary-hue),
+        var(--secondary-saturation),
+        calc(var(--secondary-light) - 10%)
+    );
+
+    /* Gray Color */
+
+    --color-gray-1: #292f33;
+    --color-gray-2: #475359;
+    --color-gray-3: #667680;
+    --color-gray-4: #8b9ca6;
+    --color-gray-5: #bac5cc;
+    --color-gray-6: #dae1e6;
+    --color-gray-7: #f2f4f5;
+
+    /* Border-radius */
+
+    --border-radius: 4px;
+    --border-rounded: 50%;
+
+    /* Box-shadow */
+
+    --box-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --box-shadow-2: 0 4px 4px rgba(0, 0, 0, 0.02), 0 0px 9px rgba(0, 0, 0, 0.09);
+    --box-shadow-3: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+    /* Trnasitions */
+
+    --transition-time: 0.3s;
+    --transition-type: ease;
+    --transition-delay: 0.3s;
+
+    --default-scale: 0.6;
+
+    /* Disabled options */
+
+    --color-disabled: #c4c9cc;
+    --opacity-disabled: 0.6;
+
+    --color-white: #fff;
+    --color-outerspace: #373a3c;
+    --color-outerspace-dark: #2d3133;
+    --color-bluezodiac: #143559;
+    --color-rollingstone: #747b80;
+    --color-bali-hai: #8695b6;
+    --color-geyser: #dfe3e6;
+    --color-abbey: #505659;
+    --color-wildsand: #f6f6f6;
+    --color-oslogray: #95989a;
+    --color-sanjuan: #365777;
+    --color-dovegray: #707070;
+    --color-graychateau: #9ca2a6;
+    --color-room-available: #0ccb81;
+    --font-primary: 'Graphik', Helvetica, Arial, sans-serif !important;
+    --width-site: 1100px;
+    --global-padding: 20px;
+}

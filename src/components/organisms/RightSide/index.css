@@ -1,0 +1,36 @@
+@global-import 'rc-slider/assets/index.css';
+
+.blockRight {
+    position: relative;
+    width: 50%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+    min-height: 300px;
+    padding: 85px 30px 30px 30px;
+
+    .relaxing {
+        position: absolute;
+        width: 110px;
+        left: calc(50% - 55px);
+        top: -55px;
+    }
+
+    .amount {
+        font-size: 45px;
+        margin: 15px 0;
+        color: #9057bf;
+        line-height: 1;
+    }
+
+    .ps {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blockRight {
+        width: 100%;
+        margin-top: 50px;
+        max-width: 512px;
+    }
+}

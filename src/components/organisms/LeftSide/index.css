@@ -1,0 +1,95 @@
+@global-import 'rc-slider/assets/index.css';
+
+.blockLeft {
+    width: 46%;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .subtitle {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .monthSubTitle {
+        width: 100%;
+        font-size: 15px;
+        margin: 30px 0 10px 0;
+    }
+
+    .month {
+        font-size: 15px;
+        color: #9057bf;
+    }
+
+    .containerSlide {
+        width: 100%;
+        margin: 20px 0;
+        min-height: 50px;
+    }
+
+    .value {
+        font-size: 18px;
+        color: var(--color-gray-1);
+    }
+}
+
+.button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #9057bf;
+    background: transparent;
+
+    &:nth-child(1) {
+        margin-right: 15px;
+    }
+
+    > span {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.symbol {
+    &::before,
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        margin: auto;
+        border-radius: 2px;
+        content: '';
+    }
+}
+
+.symbol {
+    &::before {
+        width: 18px;
+        height: 1px;
+        background-color: #9057bf;
+    }
+}
+
+.plus .symbol::after {
+    width: 1px;
+    height: 18px;
+    background-color: #9057bf;
+}
+
+@media (max-width: 768px) {
+    .blockLeft {
+        width: 100%;
+        max-width: 512px;
+    }
+}

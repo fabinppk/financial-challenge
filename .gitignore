@@ -1,0 +1,9 @@
+node_modules/
+storybook-static/
+coverage/
+package-lock.json
+.next/
+.vscode/
+.DS_Store
+jsconfig.json
+.env

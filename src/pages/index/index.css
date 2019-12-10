@@ -1,0 +1,17 @@
+@global-import 'rc-slider/assets/index.css';
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.container {
+    padding: 10px;
+}
+
+.dark {
+    background: var(--color-primary);
+}
+
+.white {
+    background: var(--color-white);
+}
