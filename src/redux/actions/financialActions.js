@@ -1,4 +1,4 @@
-import { CHANGE_GROSS, CHANGE_TAX, CHANGE_MONTH } from '_redux/types';
+import { CHANGE_GROSS, CHANGE_TAX, CHANGE_MONTH, CHANGE_AMOUNT } from '_redux/types';
 
 const setGross = value => {
     return async dispatch => {
@@ -18,8 +18,15 @@ const setMonth = value => {
     };
 };
 
+const setAmount = value => {
+    return async dispatch => {
+        await dispatch({ type: CHANGE_AMOUNT, payload: value });
+    };
+};
+
 export default {
     setGross,
     setTax,
-    setMonth
+    setMonth,
+    setAmount
 };

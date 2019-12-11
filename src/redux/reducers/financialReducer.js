@@ -1,4 +1,4 @@
-import { CHANGE_GROSS, CHANGE_TAX, CHANGE_MONTH } from '_redux/types';
+import { CHANGE_GROSS, CHANGE_TAX, CHANGE_MONTH, CHANGE_AMOUNT } from '_redux/types';
 
 const initialState = {
     initialAmount: 1000.0,
@@ -17,6 +17,8 @@ export default (state = initialState, action) => {
             return { ...state, tax: action.payload };
         case CHANGE_MONTH:
             return { ...state, period: action.payload };
+        case CHANGE_AMOUNT:
+            return { ...state, initialAmount: action.payload };
 
         default:
             return state;

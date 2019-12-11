@@ -24,7 +24,7 @@ const LeftSide = () => {
         }
 
         calculate();
-    }, [financial.period]);
+    }, [financial.period, financial.initialAmount]);
 
     useEffect(() => {
         async function calculate() {
@@ -36,17 +36,48 @@ const LeftSide = () => {
         }
 
         calculate();
-    }, [financial.gross, financial.period]);
+    }, [financial.gross, financial.period, financial.initialAmount]);
+
+    const changeAmount = type => {
+        switch (type) {
+            case 'decrease':
+                if (financial.initialAmount <= 0) return;
+                dispatch(actions.setAmount(financial.initialAmount - 100));
+                break;
+            case 'increase':
+                dispatch(actions.setAmount(financial.initialAmount + 100));
+                break;
+            default:
+        }
+    };
 
     return (
         <div className={style.blockLeft}>
             <p className={style.subtitle}>First deposit</p>
-            <span className={style.value}>R$ {financial.initialAmount}</span>
+            <span className={style.value}>
+                R$
+                <input
+                    className={style.input}
+                    type="number"
+                    value={financial.initialAmount}
+                    onChange={e => {
+                        dispatch(actions.setAmount(e.target.value));
+                    }}
+                />
+            </span>
             <div>
-                <button type="button" className={classNames(style.button, style.minus)}>
+                <button
+                    type="button"
+                    onClick={() => changeAmount('decrease')}
+                    className={classNames(style.button, style.minus)}
+                >
                     <span className={style.symbol} />
                 </button>
-                <button type="button" className={classNames(style.button, style.plus)}>
+                <button
+                    type="button"
+                    onClick={() => changeAmount('increase')}
+                    className={classNames(style.button, style.plus)}
+                >
                     <span className={style.symbol} />
                 </button>
             </div>

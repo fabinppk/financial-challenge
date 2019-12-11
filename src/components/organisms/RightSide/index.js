@@ -13,8 +13,6 @@ const RightSide = () => {
             <img className={style.relaxing} src={relaxing} alt="relaxing" />
             <p>after {financial.period} months you would have</p>
             <p className={style.amount}>
-                tax: {financial.tax.toFixed(2)}
-                <br />
                 R$ {parseFloat(financial.gross - financial.tax).toFixed(2)}
             </p>
             <p>(gross amount R$ {parseFloat(financial.gross).toFixed(2)})</p>
