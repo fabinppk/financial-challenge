@@ -1,4 +1,4 @@
-# Viajar faz bem
+# Financial Challenge
 
 ## Requirements
 
@@ -15,16 +15,6 @@ below.
 
     $ npm --version || yarn --version
     6.9.0
-
-## Install
-
-    $ git clone git@github.com:sbtur/viajar-faz-bem.git
-    $ cd viajar-faz-bem
-    $ npm i
-
-## Configure app
-
-You will need [`.env`](https://drive.google.com/drive/u/0/folders/1sSLXqe4Go_hdBws89TuZ-m5xHWwVufGT) file on root project.
 
 ## Run project on development mode:
 
