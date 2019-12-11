@@ -55,6 +55,7 @@
     overflow: hidden;
     border: 1px solid #9057bf;
     background: transparent;
+    cursor: pointer;
 
     &:nth-child(1) {
         margin-right: 15px;
