@@ -32,7 +32,7 @@ export default class DefaultDocument extends Document {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-                    <meta name="theme-color" content="var(--color-primary)" />
+                    <meta name="theme-color" content="#84489c" />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
                     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
                     <DefaultSeo {...DEFAULT_SEO} />
