@@ -34,6 +34,17 @@
         font-size: 18px;
         color: var(--color-gray-1);
     }
+
+    .input {
+        font-size: 18px;
+        color: var(--color-gray-1);
+        border: 0;
+        background: transparent;
+
+        &:focus {
+            outline: 0;
+        }
+    }
 }
 
 .button {
@@ -41,6 +52,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    overflow: hidden;
     border: 1px solid #9057bf;
     background: transparent;
 
@@ -56,40 +68,70 @@
         top: 0;
         left: 0;
     }
-}
 
-.symbol {
-    &::before,
-    &::after {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        display: block;
-        margin: auto;
-        border-radius: 2px;
-        content: '';
+    .symbol {
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            display: block;
+            margin: auto;
+            border-radius: 2px;
+            content: '';
+        }
     }
-}
 
-.symbol {
-    &::before {
-        width: 18px;
-        height: 1px;
+    &.minus .symbol {
+        &::after {
+            width: 18px;
+            height: 1px;
+            background-color: #9057bf;
+        }
+    }
+
+    &.plus .symbol {
+        &::after {
+            width: 1px;
+            height: 18px;
+            background-color: #9057bf;
+        }
+
+        &::before {
+            width: 18px;
+            height: 1px;
+            background-color: #9057bf;
+        }
+    }
+
+    &:active {
         background-color: #9057bf;
-    }
-}
 
-.plus .symbol::after {
-    width: 1px;
-    height: 18px;
-    background-color: #9057bf;
+        .symbol {
+            &::after {
+                background-color: white;
+            }
+        }
+
+        &.plus .symbol {
+            &::before {
+                background-color: white;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .blockLeft {
+        margin-top: 30px;
         width: 100%;
         max-width: 512px;
+
+        .value {
+            display: inline-flex;
+            max-width: 50%;
+        }
     }
 }

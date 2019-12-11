@@ -32,5 +32,9 @@
         width: 100%;
         margin-top: 50px;
         max-width: 512px;
+
+        .amount {
+            font-size: 35px;
+        }
     }
 }
