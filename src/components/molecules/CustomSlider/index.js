@@ -26,14 +26,14 @@ const CustomSlider = () => {
                 borderRadius: 10,
                 height: 2
             }}
-            trackStyle={{ background: '#9057bf', height: 2 }}
+            trackStyle={{ background: 'var(--color-primary)', height: 2 }}
             handleStyle={{
-                borderColor: '#9057bf',
+                borderColor: 'var(--color-primary)',
                 height: 15,
                 width: 15,
-                marginLeft: -10,
+                marginLeft: -5,
                 marginTop: -7,
-                backgroundColor: '#9057bf'
+                backgroundColor: 'var(--color-primary)'
             }}
             onChange={value => {
                 setMonth(value);

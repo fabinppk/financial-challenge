@@ -4,7 +4,7 @@
     position: relative;
     width: 50%;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+    box-shadow: var(--box-shadow-2);
     min-height: 300px;
     padding: 85px 30px 30px 30px;
 
@@ -18,7 +18,7 @@
     .amount {
         font-size: 45px;
         margin: 15px 0;
-        color: #9057bf;
+        color: var(--color-primary);
         line-height: 1;
     }
 
