@@ -4,14 +4,14 @@ export const grossCalculator = async (initialAmount, interest, period) => {
 };
 
 export const taxCalculator = (gross, period) => {
-    let tax;
+    let tax = 0;
 
     if (period <= 6) tax = -gross * 0.225;
     if (period > 6 && period <= 12) tax = -gross * 0.2;
     if (period > 12 && period <= 18) tax = -gross * 0.175;
     if (period > 18) tax = -gross * 0.15;
 
-    return tax;
+    return Math.abs(tax);
 };
 
 export default { grossCalculator, taxCalculator };
