@@ -3,12 +3,14 @@
 * {
     box-sizing: border-box;
     font-family: var(--font-primary);
+
+    transition: background var(--transition-time) var(--transition-type);
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: whitesmoke;
+    background: var(--body-background);
 
     ul {
         list-style: none;

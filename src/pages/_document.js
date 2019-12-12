@@ -23,8 +23,14 @@ const DEFAULT_SEO = {
 };
 
 export default class DefaultDocument extends Document {
-    // eslint-disable-next-line class-methods-use-this
+    static async getInitialProps({ renderPage, req }) {
+        const { theme } = req.cookies;
+        return { ...renderPage(), theme };
+    }
+
     render() {
+        const { theme } = this.props;
+
         return (
             <html lang="pt-BR">
                 <Head>
@@ -37,7 +43,7 @@ export default class DefaultDocument extends Document {
                     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
                     <DefaultSeo {...DEFAULT_SEO} />
                 </Head>
-                <body>
+                <body theme={theme}>
                     <Main />
                     <NextScript />
                 </body>

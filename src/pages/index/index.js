@@ -4,11 +4,12 @@ import classNames from 'classnames';
 import Base from '_templates/Base';
 import LeftSide from '_organisms/LeftSide';
 import RightSide from '_organisms/RightSide';
+import Switch from '_atoms/Switch';
 
 import globalStyle from '_styles/style.css';
 import style from './index.css';
 
-const Index = () => {
+const Index = ({ theme }) => {
     return (
         <Base>
             <NextSeo
@@ -27,8 +28,17 @@ const Index = () => {
                     </div>
                 </div>
             </div>
+            <Switch theme={theme} />
         </Base>
     );
+};
+
+Index.getInitialProps = async ({ req }) => {
+    console.log(req.cookies.theme);
+    if (req.cookies.theme !== 'dark-theme') {
+        return { theme: false };
+    }
+    return { theme: true };
 };
 
 export default Index;

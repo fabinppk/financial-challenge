@@ -1,4 +1,60 @@
+:global {
+    [theme='dark-theme'] {
+        --body-background: #1b1c22;
+
+        /* Primary Color in HSL */
+        --primary-hue: 272;
+        --primary-saturation: 100%;
+        --primary-light: 54%;
+
+        --color-primary: hsl(var(--primary-hue), var(--primary-saturation), var(--primary-light));
+        --color-primary-light: hsl(
+            var(--primary-hue),
+            var(--primary-saturation),
+            calc(var(--primary-light) + 10%)
+        );
+        --color-primary-dark: hsl(
+            var(--primary-hue),
+            var(--primary-saturation),
+            calc(var(--primary-light) - 10%)
+        );
+
+        /* Secondary Color in HSL */
+        --secondary-hue: 231;
+        --secondary-saturation: 9%;
+        --secondary-light: 15%;
+
+        --color-secondary: hsl(
+            var(--secondary-hue),
+            var(--secondary-saturation),
+            var(--secondary-light)
+        );
+        --color-secondary-light: hsl(
+            var(--secondary-hue),
+            var(--secondary-saturation),
+            calc(var(--secondary-light) + 10%)
+        );
+        --color-secondary-dark: hsl(
+            var(--secondary-hue),
+            var(--secondary-saturation),
+            calc(var(--secondary-light) - 10%)
+        );
+
+        /* Gray Color */
+
+        --color-gray-7: #292f33;
+        --color-gray-6: #475359;
+        --color-gray-5: #667680;
+        --color-gray-4: #8b9ca6;
+        --color-gray-3: #bac5cc;
+        --color-gray-2: #dae1e6;
+        --color-gray-1: #f2f4f5;
+    }
+}
+
 :root {
+    --body-background: whitesmoke;
+
     /* Primary Color in HSL */
     --primary-hue: 283;
     --primary-saturation: 37%;
@@ -60,9 +116,9 @@
 
     /* Trnasitions */
 
-    --transition-time: 0.3s;
+    --transition-time: 0.6s;
     --transition-type: ease;
-    --transition-delay: 0.3s;
+    --transition-delay: 0.6s;
 
     --default-scale: 0.6;
 
