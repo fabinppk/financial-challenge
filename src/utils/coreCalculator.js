@@ -1,5 +1,5 @@
 export const grossCalculator = async (initialAmount, interest, period) => {
-    const gross = await (initialAmount * Math.pow(1 + interest / 100, period));
+    const gross = await (initialAmount * (1 + interest / 100) ** period);
     return gross;
 };
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import { setCookie, getCookie, removeCookie } from '_utils/cookie';
 import style from '_atoms/Switch/index.css';
 
@@ -19,11 +20,20 @@ const Switch = ({ theme }) => {
     };
 
     return (
+        // eslint-disable-next-line jsx-a11y/label-has-associated-control
         <label className={style.switch}>
             <input type="checkbox" checked={checked} onChange={() => setTheme()} />
             <span className={classNames(style.slider, style.round)} />
         </label>
     );
+};
+
+Switch.propTypes = {
+    theme: PropTypes.bool
+};
+
+Switch.defaultProps = {
+    theme: false
 };
 
 export default Switch;

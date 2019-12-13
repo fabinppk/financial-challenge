@@ -5,9 +5,10 @@ import Base from '_templates/Base';
 import LeftSide from '_organisms/LeftSide';
 import RightSide from '_organisms/RightSide';
 import Switch from '_atoms/Switch';
+import PropTypes from 'prop-types';
 
 import globalStyle from '_styles/style.css';
-import style from './index.css';
+import style from '_pages/index/index.css';
 
 const Index = ({ theme }) => {
     return (
@@ -38,6 +39,14 @@ Index.getInitialProps = async ({ req }) => {
         return { theme: false };
     }
     return { theme: true };
+};
+
+Index.propTypes = {
+    theme: PropTypes.bool
+};
+
+Index.defaultProps = {
+    theme: false
 };
 
 export default Index;

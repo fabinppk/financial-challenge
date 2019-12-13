@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import actions from '_redux/actions';
 import Slider, { Handle } from 'rc-slider';
 import '_molecules/CustomSlider/index.css';
@@ -47,6 +48,18 @@ const CustomSlider = () => {
             handle={handle}
         />
     );
+};
+
+handle.propTypes = {
+    value: PropTypes.number,
+    dragging: PropTypes.bool,
+    index: PropTypes.number
+};
+
+handle.defaultProps = {
+    value: undefined,
+    dragging: false,
+    index: undefined
 };
 
 export default CustomSlider;
