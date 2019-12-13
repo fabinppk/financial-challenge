@@ -34,7 +34,6 @@ const Index = ({ theme }) => {
 };
 
 Index.getInitialProps = async ({ req }) => {
-    console.log(req.cookies.theme);
     if (req.cookies.theme !== 'dark-theme') {
         return { theme: false };
     }

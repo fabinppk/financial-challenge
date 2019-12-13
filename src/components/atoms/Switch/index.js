@@ -18,8 +18,6 @@ const Switch = ({ theme }) => {
         }
     };
 
-    // console.log(theme);
-
     return (
         <label className={style.switch}>
             <input type="checkbox" checked={checked} onChange={() => setTheme()} />

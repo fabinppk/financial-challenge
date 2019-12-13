@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import actions from '_redux/actions';
 import Slider, { Handle } from 'rc-slider';
+import '_molecules/CustomSlider/index.css';
 
 const handle = props => {
     const { value, dragging, index, ...restProps } = props;
