@@ -41,18 +41,18 @@ $ npm i
 $ npm run dev
 ```
 
-## Run project on production mode:
-
-```
-$ npm i
-$ npm run start
-```
-
 ## Generate a build:
 
 ```
 $ npm i
 $ npm run build
+```
+
+## Run project on production mode:
+
+```
+$ npm i
+$ npm run build && npm run start
 ```
 
 ## Generate a storybook:
@@ -83,8 +83,6 @@ $ npm run lint
 ```
 
 ## Run tests:
-
-OBS: I created only one test to see if the command works.
 
 ```
 $ npm i
