@@ -10,10 +10,12 @@
     <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-desktop-dark.png" width="100%" />
 </center>
 
-<center>
-    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-light.png" width="300px" />
-    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-dark.png" width="300px" />
-</center>
+<table style="width:100%">
+  <tr>
+    <th><img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-light.png" width="80%" /></th>
+    <td><img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-dark.png" width="80%" /></td>
+  </tr>
+</table>
 
 ## Demo - https://financial-challenge.herokuapp.com/
 
