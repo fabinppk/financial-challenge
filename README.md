@@ -11,11 +11,8 @@
 </center>
 
 <center>
-    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-light.png" width="100%" />
-</center>
-
-<center>
-    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-dark.png" width="100%" />
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-light.png" width="300px" />
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-dark.png" width="300px" />
 </center>
 
 ## Demo - https://financial-challenge.herokuapp.com/
