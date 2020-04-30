@@ -7,8 +7,7 @@ import RightSide from '_organisms/RightSide';
 import Switch from '_atoms/Switch';
 import PropTypes from 'prop-types';
 
-import globalStyle from '_styles/style.css';
-import style from '_pages/index/index.css';
+import style from '_pages/index/index.module.scss';
 
 const Index = ({ theme }) => {
     return (
@@ -18,11 +17,11 @@ const Index = ({ theme }) => {
                 description="Calculator - Nubank"
                 openGraph={{
                     title: 'Nubank',
-                    description: 'Calculator - Nubank'
+                    description: 'Calculator - Nubank',
                 }}
             />
-            <div className={classNames(globalStyle.wrapper)}>
-                <div className={classNames(globalStyle.wrapperContent)}>
+            <div className={classNames('wrapper')}>
+                <div className={classNames('wrapperContent')}>
                     <div className={style.container}>
                         <LeftSide />
                         <RightSide />
@@ -42,11 +41,11 @@ Index.getInitialProps = async ({ req }) => {
 };
 
 Index.propTypes = {
-    theme: PropTypes.bool
+    theme: PropTypes.bool,
 };
 
 Index.defaultProps = {
-    theme: false
+    theme: false,
 };
 
 export default Index;

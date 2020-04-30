@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import financialReducer from '_redux/reducers/financialReducer';
 
 const rootReducer = combineReducers({
-    financial: financialReducer
+    financial: financialReducer,
 });
 
 export default rootReducer;

@@ -2,11 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import styles from './styles.css';
+import styles from './styles.module.scss';
+
+import '_styles/style.scss';
 
 const THEMES = {
     dark: styles.dark,
-    white: styles.white
+    white: styles.white,
 };
 
 const Container = ({ theme, className, children, title }) => (
@@ -25,13 +27,13 @@ Container.propTypes = {
     theme: PropTypes.string,
     className: PropTypes.string,
     children: PropTypes.node.isRequired,
-    title: PropTypes.string
+    title: PropTypes.string,
 };
 
 Container.defaultProps = {
     theme: undefined,
     className: undefined,
-    title: undefined
+    title: undefined,
 };
 
 export default Container;

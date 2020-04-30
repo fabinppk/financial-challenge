@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import style from '_organisms/RightSide/index.css';
+import style from '_organisms/RightSide/index.module.scss';
 import relaxing from '_images/relaxing.png';
 
 const RightSide = () => {
-    const { financial } = useSelector(state => ({
-        ...state
+    const { financial } = useSelector((state) => ({
+        ...state,
     }));
 
     return (

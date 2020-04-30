@@ -14,12 +14,12 @@ const DEFAULT_SEO = {
         image: 'https://blog.nubank.com.br/wp-content/uploads/2018/11/novo-cartao.jpg',
         site_name: 'Calculator Nubank',
         imageWidth: 1440,
-        imageHeight: 600
+        imageHeight: 600,
     },
     twitter: {
         handle: '@nubank',
-        cardType: 'summary_large_image'
-    }
+        cardType: 'summary_large_image',
+    },
 };
 
 export default class DefaultDocument extends Document {

@@ -3,12 +3,12 @@ import classNames from 'classnames';
 import { useDispatch, useSelector } from 'react-redux';
 import actions from '_redux/actions';
 import CustomSlider from '_molecules/CustomSlider';
-import style from '_organisms/LeftSide/index.css';
+import style from '_organisms/LeftSide/index.module.scss';
 import { grossCalculator, taxCalculator } from '_utils/coreCalculator';
 
 const LeftSide = () => {
-    const { financial } = useSelector(state => ({
-        ...state
+    const { financial } = useSelector((state) => ({
+        ...state,
     }));
 
     const dispatch = useDispatch();
@@ -38,7 +38,7 @@ const LeftSide = () => {
         calculate();
     }, [financial.gross, financial.period, financial.initialAmount]);
 
-    const changeAmount = type => {
+    const changeAmount = (type) => {
         switch (type) {
             case 'decrease':
                 if (financial.initialAmount <= 0) return;
@@ -60,7 +60,7 @@ const LeftSide = () => {
                     className={style.input}
                     type="number"
                     value={financial.initialAmount}
-                    onChange={e => {
+                    onChange={(e) => {
                         dispatch(actions.setAmount(e.target.value));
                     }}
                 />

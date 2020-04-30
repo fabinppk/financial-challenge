@@ -9,8 +9,8 @@ describe('financialActions', () => {
             interest: 0.5,
             period: 12,
             tax: 0,
-            violations: []
-        }
+            violations: [],
+        },
     };
 
     test('Store invalidAmount', () => {

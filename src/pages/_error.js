@@ -1,11 +1,10 @@
 import React from 'react';
-import '_styles/style.css';
 
 const p = {
     width: '100%',
     textAlign: 'center',
     color: 'black',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
 };
 
 const Error = () => {

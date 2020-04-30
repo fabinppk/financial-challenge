@@ -1,5 +1,23 @@
 # Financial Challenge
 
+## Prints
+
+<center>
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-desktop-light.png" width="100%" />
+</center>
+
+<center>
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-desktop-dark.png" width="100%" />
+</center>
+
+<center>
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-light.png" width="100%" />
+</center>
+
+<center>
+    <img src="https://raw.githubusercontent.com/fabinppk/financial-challenge/master/prints/finalcial-mobile-dark.png" width="100%" />
+</center>
+
 ## Code design choices
 
 #### Next js

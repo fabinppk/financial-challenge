@@ -3,21 +3,20 @@ import { useSelector, useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import actions from '_redux/actions';
 import Slider, { Handle } from 'rc-slider';
-import '_molecules/CustomSlider/index.css';
 
-const handle = props => {
+const handle = (props) => {
     const { value, dragging, index, ...restProps } = props;
     return <Handle value={value} {...restProps} />;
 };
 
 const CustomSlider = () => {
-    const { financial } = useSelector(state => ({
-        ...state
+    const { financial } = useSelector((state) => ({
+        ...state,
     }));
 
     const dispatch = useDispatch();
 
-    const setMonth = value => {
+    const setMonth = (value) => {
         dispatch(actions.setMonth(value));
     };
 
@@ -26,7 +25,7 @@ const CustomSlider = () => {
             railStyle={{
                 backgroundColor: '#bdbdbd',
                 borderRadius: 10,
-                height: 2
+                height: 2,
             }}
             trackStyle={{ background: 'var(--color-primary)', height: 2 }}
             handleStyle={{
@@ -35,9 +34,9 @@ const CustomSlider = () => {
                 width: 15,
                 marginLeft: -5,
                 marginTop: -7,
-                backgroundColor: 'var(--color-primary)'
+                backgroundColor: 'var(--color-primary)',
             }}
-            onChange={value => {
+            onChange={(value) => {
                 setMonth(value);
             }}
             value={financial.period}
@@ -53,13 +52,13 @@ const CustomSlider = () => {
 handle.propTypes = {
     value: PropTypes.number,
     dragging: PropTypes.bool,
-    index: PropTypes.number
+    index: PropTypes.number,
 };
 
 handle.defaultProps = {
     value: undefined,
     dragging: false,
-    index: undefined
+    index: undefined,
 };
 
 export default CustomSlider;

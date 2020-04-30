@@ -3,7 +3,7 @@ import {
     CHANGE_TAX,
     CHANGE_MONTH,
     CHANGE_AMOUNT,
-    PUSH_VIOLATION
+    PUSH_VIOLATION,
 } from '_redux/types';
 
 const initialState = {
@@ -12,7 +12,7 @@ const initialState = {
     period: 12,
     gross: 1061.67,
     tax: 0,
-    violations: []
+    violations: [],
 };
 
 export default (state = initialState, action) => {
