@@ -17,9 +17,7 @@
   </tr>
 </table>
 
-## Demo - https://financial-challenge.herokuapp.com/
-
-(Se tiver problema ao abrir, tente recarregar a página mais de uma vez)
+## Demo - https://financial-challenge.fabinppk.vercel.app/
 
 ## Code design choices
 
@@ -50,10 +48,10 @@ You should be able to run the following command after the installation procedure
 below.
 
     $ node --version
-    v10.15.2
+    v12.13.1
 
     $ npm --version || yarn --version
-    6.9.0
+    6.14.8
 
 ## Run project on development mode:
 
