@@ -7,7 +7,7 @@ import RightSide from '_organisms/RightSide';
 import Switch from '_atoms/Switch';
 import PropTypes from 'prop-types';
 
-import style from '_pages/index/index.module.scss';
+import style from '_pages/index.module.scss';
 
 const Index = ({ theme }) => {
     return (
